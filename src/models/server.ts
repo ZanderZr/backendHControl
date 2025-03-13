@@ -28,8 +28,8 @@ class Server {
    */
   constructor() {
     this.app = express(); // Se inicializa la app
-    this.HOST = process.env.HOST || "localhost";
-    this.PORT = process.env.PORT || 3001;
+    this.HOST = process.env.HOST || '0.0.0.0';
+    this.PORT = process.env.PORT || 3000;
 
     this.middlewares();
     this.routes();

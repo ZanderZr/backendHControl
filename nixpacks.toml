@@ -1,10 +1,10 @@
 workdir = "."
 
 [install]
-  command = "npm install"
+command = "npm install"
 
 [build]
-  command = "npm build"
+command = "npm run build"
 
 [run]
-  command = "npm start"
+command = "npm start"

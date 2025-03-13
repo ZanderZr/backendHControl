@@ -30,6 +30,7 @@ Routine.init(
       autoIncrement: true, // El campo es autoincrementable
       primaryKey: true, // Este campo es la clave primaria
     },
+    
     idUser: {
       type: DataTypes.INTEGER, // Tipo de dato: entero
       allowNull: false, // No puede ser nulo

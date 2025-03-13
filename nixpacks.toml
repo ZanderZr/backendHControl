@@ -1,0 +1,10 @@
+workdir = "."
+
+[install]
+  command = "npm install"
+
+[build]
+  command = "npm build"
+
+[run]
+  command = "npm start"

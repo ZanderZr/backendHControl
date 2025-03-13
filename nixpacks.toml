@@ -1,7 +1,0 @@
-workdir = "."
-
-[build]
-  command = "tsc"
-
-[run]
-  command = "node dist/src/index.js"

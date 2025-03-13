@@ -1,0 +1,7 @@
+workdir = "."
+
+[build]
+  command = "npm ci"
+
+[run]
+  command = "node dist/index.js"

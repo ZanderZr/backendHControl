@@ -22,7 +22,7 @@ const router = (0, express_1.Router)();
  * @returns {Array} - Lista de objetos board.
  * @throws {500} - Si ocurre un error al obtener los datos.
  */
-const getAllBoard = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const getAllBoard = (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const data = yield board_1.default.findAll(); // Obtiene todos los boards de la base de datos
         res.json(data); // Devuelve los boards en formato JSON

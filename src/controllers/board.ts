@@ -9,7 +9,7 @@ const router = Router();
  * @returns {Array} - Lista de objetos board.
  * @throws {500} - Si ocurre un error al obtener los datos.
  */
-export const getAllBoard = async (req: Request, res: Response) => {
+export const getAllBoard = async (_req: Request, res: Response) => {
   try {
     const data = await Board.findAll();  // Obtiene todos los boards de la base de datos
     res.json(data);  // Devuelve los boards en formato JSON

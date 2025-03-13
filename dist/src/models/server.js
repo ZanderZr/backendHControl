@@ -60,7 +60,7 @@ class Server {
      * Establece las rutas para los distintos recursos (usuarios, ejercicios, etc.).
      */
     routes() {
-        this.app.get("/", (req, res) => {
+        this.app.get("/", (_req, res) => {
             res.json({ msg: "API works" });
         });
         this.app.use("/api/users", user_1.default);
@@ -104,7 +104,7 @@ class Server {
      * @param {Response} res La respuesta HTTP.
      * @param {NextFunction} next La siguiente función de middleware.
      */
-    errorHandler(err, req, res, next) {
+    errorHandler(err, _req, res, _next) {
         console.error(err.stack);
         res.status(500).json({ message: "Algo salió mal", error: err.message });
     }
